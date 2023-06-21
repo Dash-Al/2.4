@@ -1,0 +1,11 @@
+A = list(map(int, input().split()))
+proz = 1
+count = 0
+
+for num in A:
+  if num > 8 and num < 18 and num % 10 == 0:
+    proz *= num
+    count += 1
+
+print("Произведение элементов, больших 8 и меньших 18 и кратных 10: ", proz)
+print("Количество таких элементов: ", count)
